@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import users from "./users.json";
+import Users from "./Users";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+    const [message, setMessage] = useState(null);
+
+    const generateuser = (arrayLength) => {
+        return Math.floor((Math.random() * arrayLength) + 0);
+    }
+    const [randomNumber, setRand] = useState(generateuser(users.length));
+    const generate = () => {
+        setRand(generateuser(users.length));
+    }
+
+    useEffect(() => {
+        setMessage(`${users[randomNumber].name}'s account has been generated!`);
+    }, [randomNumber]);
+
+    return (
+        <>
+            <h2>Generate a random user</h2>
+            <button type="button" onClick={generate}>Generate</button>
+            <p>{message}</p>
+            <Users user={users[randomNumber]} />
+        </>
+    )
 }
-
-export default App;

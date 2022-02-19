@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "Narcis",
+        "email": "lnarcis310@gmail.com"
+    },
+    {
+        "id": 2,
+        "name": "Mihai",
+        "email": "mihai@gmail.com"
+    },
+    {
+        "id": 3,
+        "name": "Andrei",
+        "email": "andrei@gmail.com"
+    },
+    {
+        "id": 4,
+        "name": "Ioan",
+        "email": "ioan@gmail.com"
+    },
+    {
+        "id": 5,
+        "name": "Dan",
+        "email": "dan@gmail.com"
+    },
+    {
+        "id": 6,
+        "name": "Popa",
+        "email": "popa@gmail.com"
+    },
+    {
+        "id": 7,
+        "name": "Bill",
+        "email": "bill@gmail.com"
+    },
+    {
+        "id": 8,
+        "name": "Gates",
+        "email": "gates@gmail.com"
+    },
+    {
+        "id": 9,
+        "name": "jeff",
+        "email": "jeff@gmail.com"
+    },
+    {
+        "id": 10,
+        "name": "Test",
+        "email": "test@gmail.com"
+    }
+]
